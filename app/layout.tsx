@@ -40,7 +40,7 @@ export default function RootLayout({
       >
         <div className="app-shell flex min-h-screen flex-col">
           <Header />
-          <main className="mx-auto w-full max-w-4xl flex-1 px-4 py-8 md:px-6 md:py-12">
+          <main className="mx-auto w-full max-w-4xl flex-1 px-4 py-5 md:px-6 md:py-6">
             {children}
           </main>
           <Footer />

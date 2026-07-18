@@ -78,23 +78,23 @@ export function ProjectInputForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
-      <div className="space-y-3">
+    <form onSubmit={handleSubmit} className="space-y-3.5">
+      <div className="space-y-2">
         <Label htmlFor="description" className="text-sm font-medium">
           Décrivez votre projet
         </Label>
 
         <div
           className={cn(
-            "rounded-2xl border border-border/80 bg-background/90 shadow-sm backdrop-blur-sm transition-[box-shadow,border-color]",
-            "focus-within:border-ring focus-within:ring-3 focus-within:ring-ring/30",
-            isListening && "border-red-400/70 ring-3 ring-red-400/20",
+            "rounded-xl border border-border/80 bg-background/90 shadow-sm backdrop-blur-sm transition-[box-shadow,border-color]",
+            "focus-within:border-ring focus-within:ring-2 focus-within:ring-ring/30",
+            isListening && "border-red-400/70 ring-2 ring-red-400/20",
           )}
         >
           <Textarea
             id="description"
             name="description"
-            rows={5}
+            rows={4}
             value={displayValue}
             onChange={(event) => {
               if (isListening) stop();
@@ -104,11 +104,11 @@ export function ProjectInputForm() {
             }}
             placeholder="Décrivez le type d'application, les utilisateurs cibles et les fonctionnalités clés. Ex. : marketplace B2B pour artisans, avec paiements, messagerie et tableau de bord administrateur."
             maxLength={MAX_DESCRIPTION_LENGTH}
-            className="min-h-32 resize-none border-0 bg-transparent px-4 pt-4 pb-2 text-base shadow-none focus-visible:border-0 focus-visible:ring-0"
+            className="min-h-28 resize-none border-0 bg-transparent px-3.5 pt-3 pb-1.5 text-sm shadow-none focus-visible:border-0 focus-visible:ring-0 md:text-base"
           />
 
-          <div className="flex items-center justify-between gap-2 px-2 pb-2">
-            <div className="min-h-8 flex items-center px-2 text-xs text-muted-foreground">
+          <div className="flex items-center justify-between gap-2 px-2 pb-1.5">
+            <div className="flex min-h-7 items-center px-1.5 text-xs text-muted-foreground">
               {isListening ? (
                 <span className="flex items-center gap-2 font-medium text-red-600 dark:text-red-400">
                   <span className="relative flex size-2">
@@ -134,7 +134,7 @@ export function ProjectInputForm() {
                 }
                 title={isListening ? "Arrêter" : "Parler"}
                 className={cn(
-                  "inline-flex size-9 shrink-0 items-center justify-center rounded-full transition-colors",
+                  "inline-flex size-8 shrink-0 items-center justify-center rounded-full transition-colors",
                   isListening
                     ? "bg-red-500 text-white hover:bg-red-600"
                     : "text-muted-foreground hover:bg-muted hover:text-foreground",
@@ -159,7 +159,7 @@ export function ProjectInputForm() {
         </p>
       </div>
 
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
         <Button
           type="button"
           variant="ghost"
