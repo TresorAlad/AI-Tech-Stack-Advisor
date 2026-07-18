@@ -9,13 +9,14 @@ import type { ApiErrorCode } from "@/types/api";
 
 const ERROR_MESSAGES: Record<ApiErrorCode, string> = {
   INVALID_INPUT: "Votre description est trop courte ou invalide.",
-  METHOD_NOT_ALLOWED: "Methode non autorisee.",
-  INVALID_LLM_OUTPUT: "Erreur de generation. Reessayez.",
-  RATE_LIMIT: "Trop de requetes. Reessayez dans quelques minutes.",
-  INTERNAL_ERROR: "Une erreur est survenue. Reessayez.",
+  METHOD_NOT_ALLOWED: "Méthode non autorisée.",
+  INVALID_LLM_OUTPUT: "Erreur de génération. Réessayez.",
+  RATE_LIMIT: "Trop de requêtes. Réessayez dans quelques minutes.",
+  INTERNAL_ERROR: "Une erreur est survenue. Réessayez.",
   LLM_UNAVAILABLE: "Service IA temporairement indisponible.",
-  TIMEOUT: "L analyse a pris trop de temps. Reessayez.",
-  EMPTY_PENDING: "Aucune description trouvee. Revenez a l'accueil pour saisir votre projet.",
+  TIMEOUT: "L'analyse a pris trop de temps. Réessayez.",
+  EMPTY_PENDING:
+    "Aucune description trouvée. Revenez à l'accueil pour saisir votre projet.",
 };
 
 interface AnalysisErrorProps {
@@ -35,7 +36,7 @@ export function AnalysisError({ error, onRetry }: AnalysisErrorProps) {
       <div className="flex flex-col gap-3 sm:flex-row">
         {onRetry && error !== "EMPTY_PENDING" ? (
           <Button type="button" onClick={onRetry}>
-            Reessayer
+            Réessayer
           </Button>
         ) : null}
         <Link href="/" className={cn(buttonVariants({ variant: "outline" }))}>

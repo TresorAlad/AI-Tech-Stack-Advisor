@@ -19,11 +19,11 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "AI Tech Stack Advisor",
   description:
-    "Recommandations de stack technique propulsees par Ministral 3 3B via Rodium AI.",
+    "Obtenez une recommandation de stack technique complète, propulsée par Ministral 3 3B via Rodium AI.",
   openGraph: {
     title: "AI Tech Stack Advisor",
     description:
-      "Decrivez votre projet et obtenez une architecture complete avec justifications.",
+      "Décrivez votre projet et recevez une architecture technique justifiée, avec estimations.",
     type: "website",
   },
 };

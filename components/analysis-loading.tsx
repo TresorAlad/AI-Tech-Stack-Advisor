@@ -10,7 +10,7 @@ export function AnalysisLoading() {
       <div className="space-y-2">
         <p className="text-lg font-medium">Analyse de votre projet en cours...</p>
         <p className="text-sm text-muted-foreground">
-          Cela peut prendre 15 a 30 secondes.
+          Cela peut prendre 15 à 30 secondes.
         </p>
       </div>
       <div className="grid gap-4 sm:grid-cols-3">

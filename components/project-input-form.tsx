@@ -81,7 +81,7 @@ export function ProjectInputForm() {
     <form onSubmit={handleSubmit} className="space-y-5">
       <div className="space-y-3">
         <Label htmlFor="description" className="text-sm font-medium">
-          Decrivez votre projet
+          Décrivez votre projet
         </Label>
 
         <div
@@ -102,7 +102,7 @@ export function ProjectInputForm() {
               setDescription(event.target.value);
               clearError();
             }}
-            placeholder="Ex. Une marketplace B2B pour artisans, avec paiements, messagerie et tableau de bord admin. Objectif : 10 000 utilisateurs en annee 1..."
+            placeholder="Décrivez le type d'application, les utilisateurs cibles et les fonctionnalités clés. Ex. : marketplace B2B pour artisans, avec paiements, messagerie et tableau de bord administrateur."
             maxLength={MAX_DESCRIPTION_LENGTH}
             className="min-h-32 resize-none border-0 bg-transparent px-4 pt-4 pb-2 text-base shadow-none focus-visible:border-0 focus-visible:ring-0"
           />
@@ -115,7 +115,7 @@ export function ProjectInputForm() {
                     <span className="absolute inline-flex size-full animate-ping rounded-full bg-red-400 opacity-75" />
                     <span className="relative inline-flex size-2 rounded-full bg-red-500" />
                   </span>
-                  Ecoute en cours...
+                  Écoute en cours...
                 </span>
               ) : (
                 <span className="tabular-nums">
@@ -130,9 +130,9 @@ export function ProjectInputForm() {
                 onClick={handleMicToggle}
                 aria-pressed={isListening}
                 aria-label={
-                  isListening ? "Arreter la dictee" : "Dicter avec le micro"
+                  isListening ? "Arrêter la dictée" : "Dicter avec le micro"
                 }
-                title={isListening ? "Arreter" : "Parler"}
+                title={isListening ? "Arrêter" : "Parler"}
                 className={cn(
                   "inline-flex size-9 shrink-0 items-center justify-center rounded-full transition-colors",
                   isListening
@@ -154,8 +154,8 @@ export function ProjectInputForm() {
           {error
             ? error
             : isListening
-              ? "Parlez clairement. Cliquez sur le micro pour arreter."
-              : `Minimum ${MIN_DESCRIPTION_LENGTH} caracteres. Utilisez le micro pour dicter.`}
+              ? "Enregistrement en cours. Cliquez sur le micro pour arrêter."
+              : `${MIN_DESCRIPTION_LENGTH} caractères minimum. Vous pouvez aussi dicter votre description.`}
         </p>
       </div>
 
@@ -166,7 +166,7 @@ export function ProjectInputForm() {
           onClick={handleExample}
           className="justify-start text-muted-foreground sm:justify-center"
         >
-          Essayer l&apos;exemple telemedecine
+          Charger l&apos;exemple télémédecine
         </Button>
         <Button
           type="submit"
@@ -175,7 +175,7 @@ export function ProjectInputForm() {
           className="gap-2 sm:ml-auto"
         >
           <Sparkles className="size-4" aria-hidden />
-          Analyser mon projet
+          Lancer l&apos;analyse
         </Button>
       </div>
     </form>

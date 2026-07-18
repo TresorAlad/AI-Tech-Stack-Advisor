@@ -10,15 +10,15 @@ export default function HomePage() {
           AI Tech Stack Advisor
         </p>
         <h1 className="font-[family-name:var(--font-display)] text-4xl leading-[1.08] font-semibold tracking-tight text-balance md:text-6xl">
-          Votre architecture,
+          Concevez une architecture
           <span className="block text-teal-800 dark:text-teal-200">
-            pensee en quelques secondes
+            technique fiable, en quelques secondes
           </span>
         </h1>
         <p className="mx-auto max-w-2xl text-base leading-relaxed text-muted-foreground sm:mx-0 md:text-lg">
-          Decrivez votre idee - ou dictez-la au micro. Ministral 3 3B via Rodium AI
-          recommande une stack complete, justifiee, avec estimations equipe,
-          duree et cout.
+          Décrivez votre projet ou dictez-le au micro. Ministral 3 3B, via Rodium AI,
+          recommande une stack complète et justifiée, avec une estimation d&apos;équipe,
+          de durée et de coût.
         </p>
       </section>
 
@@ -41,33 +41,33 @@ export default function HomePage() {
           <div className="flex items-center gap-2 text-teal-800 dark:text-teal-200">
             <Layers3 className="size-4" aria-hidden />
             <h2 className="font-[family-name:var(--font-display)] text-sm font-semibold">
-              Stack complete
+              Stack complète
             </h2>
           </div>
           <p className="text-sm leading-relaxed text-muted-foreground">
-            Backend, frontend, mobile, data, infra, cloud et DevOps.
+            Backend, frontend, mobile, données, infrastructure, cloud et DevOps.
           </p>
         </div>
         <div className="space-y-2">
           <div className="flex items-center gap-2 text-teal-800 dark:text-teal-200">
             <Scale className="size-4" aria-hidden />
             <h2 className="font-[family-name:var(--font-display)] text-sm font-semibold">
-              Justifiee
+              Choix justifiés
             </h2>
           </div>
           <p className="text-sm leading-relaxed text-muted-foreground">
-            Chaque choix technologique est explique clairement.
+            Chaque recommandation s&apos;accompagne d&apos;une explication technique claire.
           </p>
         </div>
         <div className="space-y-2">
           <div className="flex items-center gap-2 text-teal-800 dark:text-teal-200">
             <Timer className="size-4" aria-hidden />
             <h2 className="font-[family-name:var(--font-display)] text-sm font-semibold">
-              Estimee
+              Estimations utiles
             </h2>
           </div>
           <p className="text-sm leading-relaxed text-muted-foreground">
-            Equipe, duree, cout cloud et niveaux de complexite.
+            Dimensionnez équipe, délai, budget cloud et niveau de complexité.
           </p>
         </div>
       </section>

@@ -17,4 +17,4 @@ export const DEFAULT_MODEL =
 export const SESSION_PENDING_KEY = "atsa:pending";
 export const SESSION_RESULT_KEY = "atsa:result";
 
-export const EXAMPLE_TELEMEDICINE = `Je souhaite creer une plateforme de telemedecine avec une application mobile, un tableau de bord administrateur, des appels video et un chatbot IA. L'objectif est de supporter environ 50 000 utilisateurs.`;
+export const EXAMPLE_TELEMEDICINE = `Je souhaite créer une plateforme de télémédecine avec une application mobile, un tableau de bord administrateur, des appels vidéo et un chatbot IA. L'objectif est de supporter environ 50 000 utilisateurs.`;

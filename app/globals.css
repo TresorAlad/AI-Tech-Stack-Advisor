@@ -159,3 +159,52 @@
     radial-gradient(ellipse 70% 45% at 95% 5%, rgba(56, 189, 248, 0.08), transparent 50%),
     linear-gradient(180deg, oklch(0.16 0.02 220) 0%, oklch(0.14 0.015 240) 100%);
 }
+
+/* Scrollbar moderne - Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: oklch(0.72 0.04 200 / 0.55) transparent;
+}
+
+.dark * {
+  scrollbar-color: oklch(0.55 0.03 220 / 0.55) transparent;
+}
+
+/* Scrollbar moderne - Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: oklch(0.72 0.04 200 / 0.45);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.55 0.06 190 / 0.7);
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.dark *::-webkit-scrollbar-thumb {
+  background: oklch(0.55 0.03 220 / 0.5);
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.dark *::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.7 0.05 190 / 0.65);
+  border: 2px solid transparent;
+  background-clip: content-box;
+}

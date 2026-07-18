@@ -1,5 +1,5 @@
 export const STACK_JSON_SCHEMA = `{
-  "projectType": "string - type detecte (ex. SaaS B2B, Marketplace, API REST)",
+  "projectType": "string - type détecté (ex. SaaS B2B, Marketplace, API REST)",
   "backend": {
     "language": "string",
     "framework": "string",

@@ -109,11 +109,11 @@ export function useSpeechRecognition({
 
     recognition.onerror = (event) => {
       if (event.error === "not-allowed") {
-        setError("Autorisez l'acces au micro pour dicter votre projet.");
+        setError("Autorisez l'accès au micro pour dicter votre projet.");
       } else if (event.error === "no-speech") {
-        setError("Aucune parole detectee. Reessayez.");
+        setError("Aucune parole détectée. Réessayez.");
       } else if (event.error !== "aborted") {
-        setError("Erreur micro. Verifiez votre navigateur.");
+        setError("Erreur micro. Vérifiez votre navigateur.");
       }
       setIsListening(false);
     };
@@ -128,7 +128,7 @@ export function useSpeechRecognition({
       recognition.start();
       setIsListening(true);
     } catch {
-      setError("Impossible de demarrer le micro.");
+      setError("Impossible de démarrer le micro.");
       setIsListening(false);
     }
   }, [lang, stop]);

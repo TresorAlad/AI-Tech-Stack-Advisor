@@ -46,7 +46,7 @@ export function StackResultView({ data }: StackResultViewProps) {
 
       <Alert>
         <AlertDescription>
-          Estimations indicatives, a adapter a votre contexte, equipe et contraintes.
+          Estimations indicatives. À interpréter selon votre contexte, votre équipe et vos contraintes.
         </AlertDescription>
       </Alert>
 
@@ -99,7 +99,7 @@ export function StackResultView({ data }: StackResultViewProps) {
 
         <TabsContent value="database">
           <StackSectionCard
-            title="Base de donnees"
+            title="Base de données"
             icon={Database}
             fields={[
               { label: "Type", value: data.database.type },

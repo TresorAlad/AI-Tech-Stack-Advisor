@@ -36,20 +36,20 @@ export function EstimationPanel({ estimation }: EstimationPanelProps) {
       <CardContent>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <div className="space-y-1">
-            <p className="text-xs text-muted-foreground">Equipe</p>
+            <p className="text-xs text-muted-foreground">Équipe</p>
             <p className="text-sm font-medium">{estimation.teamSize}</p>
           </div>
           <div className="space-y-1">
-            <p className="text-xs text-muted-foreground">Duree</p>
+            <p className="text-xs text-muted-foreground">Durée</p>
             <p className="text-sm font-medium">{estimation.devTime}</p>
           </div>
           <div className="space-y-1">
-            <p className="text-xs text-muted-foreground">Cout cloud mensuel</p>
+            <p className="text-xs text-muted-foreground">Coût cloud mensuel</p>
             <p className="text-sm font-medium">{estimation.monthlyCloudCost}</p>
           </div>
-          <LevelBadge label="Difficulte" level={estimation.difficulty} />
-          <LevelBadge label="Scalabilite" level={estimation.scalability} />
-          <LevelBadge label="Securite" level={estimation.securityLevel} />
+          <LevelBadge label="Difficulté" level={estimation.difficulty} />
+          <LevelBadge label="Scalabilité" level={estimation.scalability} />
+          <LevelBadge label="Sécurité" level={estimation.securityLevel} />
         </div>
       </CardContent>
     </Card>
